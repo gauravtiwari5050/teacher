@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  uniq_id: MyString
+  uniq_url: MyString
+  content: 
+  files: 
+
+two:
+  uniq_id: MyString
+  uniq_url: MyString
+  content: 
+  files: 

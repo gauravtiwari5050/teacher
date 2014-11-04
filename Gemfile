@@ -48,4 +48,5 @@ gem 'angularjs-rails'
 
 #bootstrap support
 gem "twitter-bootstrap-rails"
+gem 'acts-as-taggable-on', '~> 3.4'
 

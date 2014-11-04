@@ -75,4 +75,7 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+  
+  #ebooks repo
+  config.ebooks_repo_root = "/home/deployagent/ebooks"
 end
