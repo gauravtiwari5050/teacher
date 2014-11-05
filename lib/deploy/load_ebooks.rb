@@ -14,13 +14,16 @@ def load_book(category,book_uniq_id,book_dir)
     eb.category = category
   end
   book_content_md = File.read("#{book_dir}/content.md")
-  ebook.update(title:book_details['title'],uniq_url: book_uniq_url,category: category,content: book_content_md)
+  ebook.update(title:book_details['title'],uniq_url: book_uniq_url,category: category,content: book_content_md,google_docs_link: book_details['google_docs_link'])
   ebook.cover.store!(File.open("#{book_dir}/cover.png"))
+
+  ebook.pdf.store!(File.open("#{book_dir}/ebook.pdf"))
 
   ebook.save!
   puts ebook.inspect.to_s
   puts ebook.cover.url
   puts ebook.cover.url(:thumb)
+  puts ebook.pdf.url
 
 
   puts "Done"

@@ -4,6 +4,7 @@ class Ebook < ActiveRecord::Base
   validates :category ,:presence => :true
   acts_as_taggable
   mount_uploader :cover, CoverUploader
+  mount_uploader :pdf, PdfUploader
   def rendered_content
     markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML, autolink: true, tables: true)
     if Rails.env.production?
