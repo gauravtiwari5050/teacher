@@ -1,0 +1,61 @@
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-1">
+          &nbsp;
+        </div>
+        <div class="col-md-3">
+          <img class="theImage" src="<%=@ebook.cover.url%>" width="100%">
+        </div>
+        <div class="col-md-7">
+          <div class="row">
+            <div class="col-md-12"> 
+              <div class="book_title" style="padding-top:10px">
+                   <%= @ebook.title %>
+              </div>
+              <div class="explain_status">
+                by AndroidSchool
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-8">
+              <div class="form-group" style="padding-top:30px">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Your Email">
+                  <span class="input-group-btn">
+                      <button class="btn btn-primary" type="button">Download Free PDF</button>
+                  </span>
+                </div>
+              </div> 
+              <div id="subscribe_thanks" class="alert alert-success" style="display:none">
+                    Thanks. We will send you an email when the book is released.
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-md-1">
+          &nbsp;
+        </div>
+      </div> 
+      
+       
+      </div>
+    </div> <!-- /container -->
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-1">
+          &nbsp;
+        </div>
+        <div class="col-md-10">
+            <div class="book_desc">
+              <%= @ebook.rendered_content.html_safe %> 
+            </div>
+        </div>
+        <div class="col-md-1">
+          &nbsp;
+        </div>
+      </div>
+    </div>

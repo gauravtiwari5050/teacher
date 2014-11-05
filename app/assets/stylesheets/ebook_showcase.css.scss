@@ -1,0 +1,41 @@
+.theImage {
+  border: 3px solid #FFF;
+  box-shadow: #666 0 0 10px;
+  -moz-box-shadow: #666 0 0 10px;
+  -webkit-box-shadow: #666 0 0 10px;
+  display: block;
+}
+
+.book_title {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 51px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 100;
+  line-height: 55px;
+}
+
+.explain_status {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 20px;
+  font-style: italic;
+  font-variant: normal;
+  font-weight: 100;
+  height: auto;
+  line-height: 30px;
+  color: #999;
+  padding-top:20px;
+}
+.book_desc {
+  margin-top: 20px;
+  min-height: 250px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 4px #e4e3de;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-variant: normal;
+  font-size: 16px;
+  line-height: 25px;
+  padding: 20px 10px;
+  text-align:justify;
+}

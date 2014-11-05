@@ -11,16 +11,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141104092853) do
+ActiveRecord::Schema.define(version: 20141105092336) do
 
   create_table "ebooks", force: true do |t|
     t.string   "uniq_id"
     t.string   "uniq_url"
     t.string   "category"
     t.string   "tags"
-    t.binary   "content",    limit: 2147483647
+    t.binary   "content",         limit: 2147483647
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "version"
+    t.string   "pdf"
+    t.string   "amazon_link"
+    t.string   "smashwords_link"
+    t.string   "cover"
+    t.string   "title"
   end
 
   create_table "taggings", force: true do |t|

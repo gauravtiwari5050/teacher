@@ -49,4 +49,12 @@ gem 'angularjs-rails'
 #bootstrap support
 gem "twitter-bootstrap-rails"
 gem 'acts-as-taggable-on', '~> 3.4'
+gem "colorize"
+gem "fog"
+gem "carrierwave"
+gem 'mini_magick'
+
+#markdown support
+gem 'redcarpet'
+gem 'github-markup'
 
