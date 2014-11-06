@@ -20,14 +20,14 @@
           </div>
           <div class="row">
             <div class="col-md-8">
-              <div class="form-group" style="padding-top:30px">
-                <div class="input-group">
-                  <input type="text" class="form-control" placeholder="Your Email">
+            <%= form_for Subscriber.new , url: '/subscriptions/create' ,method: 'post',html: {class: 'form-group subscription_form','data-remote'=> 'true',style: 'padding-top:30px'} do |f|%>
+              <div class="input-group">
+                 <%= f.email_field :email , class: 'form-control', placeholder: 'Your Email'%>
                   <span class="input-group-btn">
-                      <button class="btn btn-primary" type="button">Download Free PDF</button>
+                      <input class="btn btn-primary" type="submit" value="Subscribe"></input>
                   </span>
-                </div>
-              </div> 
+              </div>
+            <% end %>
               <div id="subscribe_thanks" class="alert alert-success" style="display:none">
                     Thanks. We will send you an email when the book is released.
               </div>
