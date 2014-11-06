@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141105212732) do
+ActiveRecord::Schema.define(version: 20141106133728) do
 
   create_table "ebooks", force: true do |t|
     t.string   "uniq_id"
@@ -28,6 +28,12 @@ ActiveRecord::Schema.define(version: 20141105212732) do
     t.string   "cover"
     t.string   "title"
     t.text     "google_docs_link"
+  end
+
+  create_table "subscribers", force: true do |t|
+    t.string   "email"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "taggings", force: true do |t|

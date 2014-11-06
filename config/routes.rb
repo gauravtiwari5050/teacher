@@ -4,6 +4,9 @@ Rails.application.routes.draw do
     #get '/',:action => 'list'
     get '/:book_uniq_url',:action => 'show' 
   end
+  namespace :subscriptions do
+    post '/create' ,:action => 'create' 
+  end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
