@@ -9,4 +9,4 @@ $ () ->
 		$(this).find(':submit').attr('value','Thanks !')
 		#this will remove subscription from anywhere on the page
 		$('.subscription_form').hide()
-		
+		$('.subscribe_thanks').show()

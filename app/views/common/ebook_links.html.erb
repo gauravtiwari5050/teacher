@@ -1,0 +1,17 @@
+<ul>
+  <% if !ebook.pdf.nil?%>
+    <li> <a href="<%=ebook.pdf.url%>"> Get the PDF </a> </li>
+  <% else %>
+    <li> <i>Coming Soon as a PDF/i> </li>
+  <% end%>
+  <% if !ebook.google_docs_link.nil?%>
+    <li> <a href="<%=ebook.google_docs_link%>"> Read it on Google Drive </a> </li>
+  <% else %>
+    <li> <i>Coming Soon on Google Drive</i> </li>
+  <% end%>
+  <% if !ebook.amazon_link.nil?%>
+    <li> <a href="<%=ebook.amazon_link%>"> Amazon Link </a> </li>
+  <% else %>
+    <li> <i>Coming Soon on Amazon</i> </li>
+  <% end%>
+</ul>

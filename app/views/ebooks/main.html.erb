@@ -28,9 +28,10 @@
                   </span>
               </div>
             <% end %>
-              <div id="subscribe_thanks" class="alert alert-success" style="display:none">
-                    Thanks. We will send you an email when the book is released.
-              </div>
+             <div class="subscribe_thanks" style="display:none">
+              <p> Thanks!. We have emailed you the book. </p> 
+              <%= render :template => 'common/ebook_links.html.erb' ,:locals => {ebook: @ebook}%> 
+             </div>
             </div>
           </div>
 
